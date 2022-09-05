@@ -1,1 +1,0 @@
-# vladpavlovhz.github.io
