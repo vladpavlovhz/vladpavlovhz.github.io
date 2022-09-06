@@ -1,0 +1,7 @@
+body {
+    background-image: url(resources/bg.jpg);
+    background-size: cover;
+}
+title, h1, h2, h3, p, li {
+    color: rgb(7, 7, 107);
+}
