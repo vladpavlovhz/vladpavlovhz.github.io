@@ -49,6 +49,14 @@ body {
     color: rgb(60, 120, 180);
 }
 
+.navbar li img{
+    width: 45px;
+    height: 55px;
+    float: right;
+    margin-left: 150px;
+    margin-top: 5px;
+}
+
 #currentlink {
     background-color: rgb(200, 220, 240);
     color: rgb(20, 60, 100);
@@ -56,24 +64,26 @@ body {
 
 /* Aside */
 
-.aside {
+.aside ul{
+    list-style: none;
     position: fixed;
     top: 65px;
     right: 0px;
     width: 20%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
     background-color: rgb(200, 220, 240);
 }
 
-.aside h2{
+.aside li h2{
+    display: block;
     font-size: 25px;
     padding: 5px 20px 5px 20px;
     color: rgb(20, 60, 100);
 }
 
-.aside a {
+.aside li a {
     display:block;
     text-align: left;
     padding: 5px 20px 5px 20px;
@@ -83,14 +93,21 @@ body {
     text-decoration: none;
 }
 
-.aside a:visited {
+.aside li a:visited {
     color: rgb(20, 60, 100);
 }
 
-.aside a:hover {
+.aside li a:hover {
     color: rgb(240, 240, 240);
 }
 
-.aside a:active {
+.aside li a:active {
     color: rgb(240, 240, 240);
+}
+
+/* Content */
+
+.main {
+    margin-top: 65px;
+    width: 80%;
 }
