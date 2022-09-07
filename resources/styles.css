@@ -111,3 +111,12 @@ body {
     margin-top: 65px;
     width: 80%;
 }
+
+details > summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+details > summary:hover {
+    color: blue;
+}
