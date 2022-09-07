@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    background: lightcyan;
+}
+
+/* Navigation Bar */
+
+.navbar ul {
+    position: fixed;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(20, 60, 100);
+    width: 100%;
+}
+
+.navbar li {
+    float: left;
+    margin: 0;
+    border-right: 1px solid rgb(200, 220, 240);
+}
+  
+.navbar li:last-child {
+    border-right: none;
+}
+
+.navbar li a {
+    display:block;
+    text-align: center;
+    padding: 15px 50px 15px 50px;
+    color: rgb(200, 220, 240);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar li a:visited {
+    color: rgb(200, 220, 240);
+}
+
+.navbar li a:hover {
+    color: rgb(60, 120, 180);
+}
+
+.navbar li a:active {
+    color: rgb(60, 120, 180);
+}
+
+#currentlink {
+    background-color: rgb(200, 220, 240);
+    color: rgb(20, 60, 100);
+}
+
+/* Aside */
+
+.aside {
+    position: fixed;
+    top: 65px;
+    right: 0px;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(200, 220, 240);
+}
+
+.aside h2{
+    font-size: 25px;
+    padding: 5px 20px 5px 20px;
+    color: rgb(20, 60, 100);
+}
+
+.aside a {
+    display:block;
+    text-align: left;
+    padding: 5px 20px 5px 20px;
+    color: rgb(60, 120, 180);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.aside a:visited {
+    color: rgb(20, 60, 100);
+}
+
+.aside a:hover {
+    color: rgb(240, 240, 240);
+}
+
+.aside a:active {
+    color: rgb(240, 240, 240);
+}
