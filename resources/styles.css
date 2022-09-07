@@ -112,6 +112,8 @@ body {
     width: 80%;
 }
 
+/* FAQ specific */
+
 details > summary {
     list-style: none;
     cursor: pointer;
@@ -119,4 +121,37 @@ details > summary {
 
 details > summary:hover {
     color: blue;
+}
+
+/* Dashboard */
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table, td, th, tr {
+    border: 1px solid;
+}
+
+th {
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+.thead {
+    position: sticky;
+    background-color: lightskyblue;
+    color: darkslateblue;
+    top: 62px;
+}
+
+.tblock {
+    position: sticky;
+    background-color: darkcyan;
+    color: antiquewhite;
+    top: 81px;
+}
+td {
+    word-wrap: break-word;
 }
