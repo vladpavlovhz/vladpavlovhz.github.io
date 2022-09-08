@@ -3,12 +3,17 @@ body {
     background: rgb(240, 240, 240);
 }
 
-/* Navigation Bar */
+/* Sticky Navigation Bar */
 
-.navbar ul {
+.navbar {
     position: fixed;
     top: 0;
+    width: 100%;
+}
+
+.navbar ul {
     list-style-type: none;
+    display: inline-block;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -21,6 +26,7 @@ body {
     float: left;
     margin: 0;
     border-right: 1px solid rgb(200, 220, 240);
+    padding: 15px 50px 15px 50px;
 }
   
 .navbar li:last-child {
@@ -28,14 +34,13 @@ body {
 }
 
 .navbar li a {
-    display:block;
     text-align: center;
-    padding: 15px 50px 15px 50px;
     color: rgb(200, 220, 240);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
+    display: block;
 }
 
 .navbar li a:visited {
@@ -50,16 +55,24 @@ body {
     color: rgb(60, 120, 180);
 }
 
-.navbar li img{
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 50px 15px 50px;
+}
+.logo img{
     width: 45px;
     height: 55px;
-    float: right;
-    margin-left: 150px;
-    margin-top: 5px;
+    vertical-align: middle;
 }
+
+/* Current link recoloring */
 
 #currentlink {
     background-color: rgb(200, 220, 240);
+}
+
+#currentlink a {
     color: rgb(20, 60, 100);
 }
 
@@ -113,7 +126,7 @@ body {
     width: 80%;
 }
 
-/* FAQ specific */
+/* FAQ specific*/
 
 details > summary {
     list-style: none;
@@ -141,6 +154,12 @@ th {
     font-size: 18px;
 }
 
+td {
+    word-wrap: break-word;
+}
+
+/* Stickiness for headers */
+
 .thead {
     position: sticky;
     background-color: rgb(170, 190, 220);
@@ -155,6 +174,4 @@ th {
     top: 81px;
 }
 
-td {
-    word-wrap: break-word;
-}
+
