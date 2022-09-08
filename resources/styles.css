@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: lightcyan;
+    background: rgb(240, 240, 240);
 }
 
 /* Navigation Bar */
@@ -14,6 +14,7 @@ body {
     overflow: hidden;
     background-color: rgb(20, 60, 100);
     width: 100%;
+    text-align: right;
 }
 
 .navbar li {
@@ -137,21 +138,23 @@ table, td, th, tr {
 
 th {
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+    font-size: 18px;
 }
 
 .thead {
     position: sticky;
-    background-color: lightskyblue;
-    color: darkslateblue;
+    background-color: rgb(170, 190, 220);
+    color: rgb(10, 50, 90);
     top: 62px;
 }
 
 .tblock {
     position: sticky;
-    background-color: darkcyan;
+    background-color: rgb(30, 120, 150);
     color: antiquewhite;
     top: 81px;
 }
+
 td {
     word-wrap: break-word;
 }
