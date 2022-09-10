@@ -1,0 +1,35 @@
+.tests {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.tests table, .tests td, .tests th, .tests tr {
+    border: 1px solid;
+}
+
+.tests th {
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+}
+
+.tests td {
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+/* Stickiness for headers */
+
+.thead {
+    position: sticky;
+    background-color: rgb(170, 190, 220);
+    color: rgb(10, 50, 90);
+    top: 100px;
+}
+
+.tblock {
+    position: sticky;
+    background-color: rgb(30, 120, 150);
+    color: antiquewhite;
+    top: 140px;
+}

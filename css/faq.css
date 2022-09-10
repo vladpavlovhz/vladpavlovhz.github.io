@@ -1,0 +1,26 @@
+.faq {
+    overflow: auto;
+}
+
+.faq h1 {
+    padding: 0 0 0 10px;
+}
+
+.faq td {
+    padding: 2%;
+    border: 1px solid purple;
+}
+.faq details > summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.faq details > summary:hover {
+    color: blue;
+}
+
+.faq p {
+    font-size: 14px;
+}

@@ -1,72 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="resources/styles.css" rel="stylesheet"/>
+    <link href="css/mainstyle.css" rel="stylesheet"/>
     <title>Profile</title>
   </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="dashboard.html">Dashboard</a>
-          </li>
-          <li id="currentlink">
-            <a href="profile.html">Profile</a>
-          </li>
-          <li>
-            <a href="faq.html">FAQ</a>
-          </li>
-          <li>
-            <a href="blog.html">Blog</a>
-          </li>
-          <a class="logo" href="https://hz.nl/" target="_blank">
-            <img src="resources/hz-logo.png" alt="HZ Logo">
-          </a>
-        </ul>
-      </nav>
-    </header>
-    <div class="main">
-      <main>
-        <h1>Stuff about me!</h1>
-        <h2>General info</h2>
-        <ul>
-          <li><p>Name: Vladislav Pavlov</p></li>
-          <li><p>Age: 26</p></li>
-        </ul>
-        <h2>Interests</h2>
-        <ul>
-          <li>
-            <p>Winter sports</p>
-            <img src="resources/laplagne.jpg" alt="La Plagne slopes" height="150">
-          </li>
-          <li>
-            <p>Learning about machine learning</p>
-            <img src="resources/dlailogo.png" alt="Deeplearning.ai logo" height="150">
-          </li>
-          <li>
-            <p>Reading bad webnovels</p>
-            <img src="resources/rr.png" alt="Royalroad banner" height="150">
-          </li>
-        </ul>
-      </main>
+  <!-- Navbar -->
+  <div class="navbar">
+    <table>
+      <td>
+        <a href="index.html">Home</a>
+      </td>
+      <td id="active">
+        <a href="profile.html">Profile</a>
+      </td>
+      <td>
+        <a href="dashboard.html">Dashboard</a>
+      </td>
+      <td>
+        <a href="blog.html">Blog</a>
+      </td>
+      <td>
+        <a href="faq.html">FAQ</a>
+      </td>
+      <td>
+        <a href="https://hz.nl/" target="_blank">
+          <img src="resources/hz-logo.png" alt="HZ logo">
+        </a>
+      </td>
+    </table>
+  </div>
+  <!-- Main body -->
+  <div class="main">
+    <h1>Placeholder Text</h1>
+  </div>
+  <!-- Aside -->
+  <div class="aside dropdown">
+    <span>Helpful Links</span>
+    <div class="dropdown-content">
+      <table>
+        <tr>
+          <td>
+            <a>IR</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a>CER</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a>Teams</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a>Github</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a>Freecodecamp</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a>Help</a>
+          </td>
+        </tr>
+      </table>
     </div>
-    <aside class="aside">
-      <ul>
-        <li><h2>Useful links</h2></li>
-        <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" target="_blank">HZ HBO-ICT Course and Examination Regulations (CER)</a></li>
-        <li><a href="https://learn.hz.nl/" target="_blank">HZ Learn Environment</a></li>
-        <li><a target="_blank">Teams (deadlink)</a></li>
-        <li><a href="https://hz.osiris-student.nl/#/voortgang/:id" target="_blank">Studyprogress</a></li>
-        <li><a target="_blank">Program Github (deadlink)</a></li>
-        <li><a href="https://www.freecodecamp.org/learn" target="_blank">Freecodecamp</a></li>
-      </ul>
-    </aside>
-  </body>
+  </div>
+  <!-- Footer -->
+  <div>
+
+  </div>
 </html>

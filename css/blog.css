@@ -1,0 +1,18 @@
+.blog {
+    overflow: auto;
+}
+
+.blog article {
+    margin: 5% 5% 5% 5%;
+    background-color: brown;
+    border: 5px solid green;
+    padding: 0 5% 0 5%;
+}
+
+.blog h1 {
+    text-align: center;
+}
+
+.blog a p {
+    text-align: right;
+}
