@@ -1,7 +1,6 @@
 .tests {
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed;
 }
 
 .tests table, .tests td, .tests th, .tests tr {
@@ -9,27 +8,53 @@
 }
 
 .tests th {
-    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
-    font-size: 18px;
+    background-color: rgb(170, 190, 220);
+    font-size: 22px;
+    padding: 5px
 }
 
 .tests td {
     word-wrap: break-word;
     overflow: hidden;
+    padding: 3px;
 }
 
-/* Stickiness for headers */
+.tests td:first-child {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
 
-.thead {
+.tests td:nth-child(3) {
+    text-align: center;
+    font-weight: bold;
+}
+
+.tests td:nth-child(5) {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Test results */
+.passed {
+    background-color: lightgreen;
+}
+
+.failed {
+    background-color: salmon;
+}
+
+.untaken {
+    background-color: #f0df86;
+}
+
+/* Stickiness for header
+
+.thead th{
     position: sticky;
-    background-color: rgb(170, 190, 220);
     color: rgb(10, 50, 90);
     top: 100px;
 }
 
-.tblock {
-    position: sticky;
-    background-color: rgb(30, 120, 150);
-    color: antiquewhite;
-    top: 140px;
-}
+*/
+
