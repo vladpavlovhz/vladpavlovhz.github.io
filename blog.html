@@ -8,127 +8,110 @@
     <link href="css/blog.css" rel="stylesheet"/>
     <title>Blog</title>
   </head>
-  <!-- Navbar -->
-  <div class="navbar">
-    <table>
-      <td>
-        <a href="index.html">Home</a>
-      </td>
-      <td>
-        <a href="profile.html">Profile</a>
-      </td>
-      <td>
-        <a href="dashboard.html">Dashboard</a>
-      </td>
-      <td id="active">
-        <a href="blog.html">Blog</a>
-      </td>
-      <td>
-        <a href="faq.html">FAQ</a>
-      </td>
-      <td>
-        <a href="https://hz.nl/" target="_blank">
-          <img src="resources/hz-logo.png" alt="HZ logo">
-        </a>
-      </td>
-    </table>
-  </div>
-  <!-- Main body -->
-  <div class="main">
-    <section class="blog">
-      <h1>Posts</h1>
-      <article>
-        <h2>SKC</h2>
-        <details>
-          <summary>Blah1</summary>
-          <p>bbababab</p>
-        </details>
-        <a>
-  <p>Read more</p>
-</a>
-      </article>
-      <article>
-        <h2>SWOT</h2>
-        <details>
-          <summary>Blah2</summary>
-          <p>bbabbab</p>
-        </details>
-        <a>
-          <p>Read more</p>
-        </a>
-      </article>
-      <article>
-        <h2>Programming experince</h2>
-        <details>
-          <summary>Blah3</summary>
-          <p>babababa</p>
-        </details>
-        <a>
-          <p>Read more</p>
-        </a>
-      </article>
-      <article>
-        <h2>Safari</h2>
-        <details>
-          <summary>Blah4</summary>
-          <p>abababbaa</p>
-        </details>
-        <a>
-          <p>Read more</p>
-        </a>
-      </article>
-      <article>
-        <h2>Feedback</h2>
-        <details>
-          <summary>Blah5</summary>
-          <p>bbababbba</p>
-        </details>
-        <a>
-          <p>Read more</p>
-        </a>
-      </article>
-    </section>
-  </div>
-  <!-- Aside -->
-  <div class="aside dropdown">
-    <span>Helpful Links</span>
-    <div class="dropdown-content">
-      <table>
-        <tr>
+  <body>
+    <div class="grid-container">
+      <!-- Navbar -->
+      <div class="navbar">
+        <table>
+          <!-- Sote navigation -->
           <td>
-            <a>IR</a>
+            <a href="index.html">Home</a>
           </td>
-        </tr>
-        <tr>
           <td>
-            <a>CER</a>
+            <a href="profile.html">Profile</a>
           </td>
-        </tr>
-        <tr>
           <td>
-            <a>Teams</a>
+            <a href="dashboard.html">Dashboard</a>
           </td>
-        </tr>
-        <tr>
+          <td id="active">
+            <a href="blog.html">Blog</a>
+          </td>
           <td>
-            <a>Github</a>
+            <a href="faq.html">FAQ</a>
           </td>
-        </tr>
-        <tr>
+          <!-- Aside with links -->
           <td>
-            <a>Freecodecamp</a>
+            <aside class="dropdown">
+              <span>Resources</span>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 3</a>
+              </div>
+            </aside>
           </td>
-        </tr>
-        <tr>
+          <!-- Logo -->
           <td>
-            <a>Help</a>
+            <a href="https://hz.nl">
+              <img src="resources/hz-logo.png" alt="HZ logo">
+            </a>          
           </td>
-        </tr>
-      </table>
-    </div>
-  </div>
-  <!-- Footer -->
-  <div>
+        </table>
+      </div>
+      <!-- Main body -->
+      <div class="main">
+        <section class="blog">
+          <h1>Posts</h1>
+          <article>
+            <h2>SKC</h2>
+            <details>
+              <summary>Blah1</summary>
+              <p>bbababab</p>
+            </details>
+            <a href="blog/study.html">
+              <p>Read more</p>
+            </a>
+          </article>
+          <article>
+            <h2>SWOT</h2>
+            <details>
+              <summary>Blah2</summary>
+              <p>bbabbab</p>
+            </details>
+            <a href="blog/swot.html">
+              <p>Read more</p>
+            </a>
+          </article>
+          <article>
+            <h2>Programming experince</h2>
+            <details>
+              <summary>Blah3</summary>
+              <p>babababa</p>
+            </details>
+            <a href="blog/progexp.html">
+              <p>Read more</p>
+            </a>
+          </article>
+          <article>
+            <h2>Safari</h2>
+            <details>
+              <summary>Blah4</summary>
+              <p>abababbaa</p>
+            </details>
+            <a href="blog/profession.html">
+              <p>Read more</p>
+            </a>
+          </article>
+          <article>
+            <h2>Feedback</h2>
+            <details>
+              <summary>Blah5</summary>
+              <p>bbababbba</p>
+            </details>
+            <a href="blog/feedback.html">
+              <p>Read more</p>
+            </a>
+          </article>
+        </section>
+      </div>
+      </div>
+      <!-- Footer -->
+      <div>
 
-  </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -6,6 +6,14 @@
     padding: 0 0 0 10px;
 }
 
+.faq table {
+    background-color: none;
+}
+
+.faq tr {
+    background-color: azure;
+}
+
 .faq td {
     padding: 2%;
     border: 1px solid purple;
@@ -22,5 +30,5 @@
 }
 
 .faq p {
-    font-size: 14px;
+    font-size: 16px;
 }

@@ -1,28 +1,68 @@
+/* Dashboard styling */
+
+.dash-grid {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    column-gap: 10px;
+}
+
+/* Test Table */
+
 .tests {
     width: 100%;
-    border-collapse: collapse;
+    color: aliceblue;
+    position: relative;
 }
 
 .tests table, .tests td, .tests th, .tests tr {
     border: 1px solid;
 }
 
+.tests thead {
+    position: sticky;
+    top: 58px;
+}
+
+.test tbody {
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
 .tests th {
-    background-color: rgb(170, 190, 220);
+    background-color: navy;
     font-size: 22px;
-    padding: 5px
+    padding: 3px;
 }
 
 .tests td {
     word-wrap: break-word;
     overflow: hidden;
+    font-size: 13px;
     padding: 3px;
+}
+
+.tests td:first-child .tests th:first-child{
+    width: 15%;
+}
+
+.tests td:nth-child(2) .tests th:nth-child(2){
+    width: 35%;
+}
+
+.tests td:nth-child(3) .tests th:nth-child(3){
+    width: 10%;
+}
+
+.tests td:nth-child(4) .tests th:nth-child(4){
+    width: 30%;
 }
 
 .tests td:first-child {
     text-align: center;
     font-size: large;
     font-weight: bold;
+    width: 15%;
 }
 
 .tests td:nth-child(3) {
@@ -36,25 +76,49 @@
 }
 
 /* Test results */
+
 .passed {
-    background-color: lightgreen;
+    background-color: rgb(144, 238, 144, 0.5);
 }
 
 .failed {
-    background-color: salmon;
+    background-color: rgb(250, 128, 114, 0.5);
 }
 
 .untaken {
-    background-color: #f0df86;
+    background-color: rgb(240, 223, 134, 0.5);
 }
 
-/* Stickiness for header
+/* Progress bar */
 
-.thead th{
-    position: sticky;
-    color: rgb(10, 50, 90);
-    top: 100px;
+.pbar{
+    background-color: navy;
+    position: relative;
+    transform: translateY(-50%);
+    top: 45%;
+    margin-left: 45%;
+    width: 30%;
+    height: 70%;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid whitesmoke;
 }
 
-*/
+.pbar p {
+    padding-top: 350%;
+    color: whitesmoke;
+    font-weight: bold;
+}
+    
+.bar{
+    background-color: darkgreen;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+    transform-origin: bottom;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
