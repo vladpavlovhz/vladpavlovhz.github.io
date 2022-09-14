@@ -1,10 +1,11 @@
 /* General style for every page */
+
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    background-image: url("../resources/bg1.jpg");
+    background-image: url("../resources/bg.jpg");
     background-color: black;
     background-size: cover;
     overflow:auto;
@@ -16,7 +17,7 @@ body {
     grid-template-areas:
         "navbar"
         "main"
-        "footer";
+        /* "footer" */; 
 }
 
 /* Navigation bar */
@@ -36,13 +37,13 @@ body {
 }
 
 .navbar td {
-    background-color: #1f2041;
-    border-right: 0.5px solid #faf3dd;
+    background-color: #1C3879;
+    border-right: 0.5px solid #F9F5EB;
     padding: 7px 0px 7px 0px;
     text-align: center;
     font-size: 23px;
     font-weight: bold;
-    color: #faf3dd;
+    color: #F9F5EB;
     width: 14%;
 }
 
@@ -71,7 +72,7 @@ body {
 }
 
 .navbar a:visited {
-    color: lightgray;
+    color: #F9F5EB;
 }
 
 .navbar a:hover {
@@ -84,18 +85,11 @@ body {
 }
 
 #active {
-    background-color: lightgray;
+    background-color: #F9F5EB;
 }
 
 #active a {
-    color: darkblue;
-}
-
-/* Main body */
-
-.main {
-    grid-area: main;
-    margin: 2% 10% 0 10%;
+    color: #1C3879;
 }
 
 /* Aside */
@@ -108,22 +102,25 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #1f2041;
+    background-color: #1C3879;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 0.5px solid #F9F5EB;
+    border-radius: 5px;
     z-index: 1;
+    text-align: left;
     font-size: small;
 }
 
 .dropdown-content a {
-    color: whitesmoke;
+    color: #F9F5EB;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
   
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #F9F5EB;
 }
   
 .dropdown:hover .dropdown-content {
@@ -134,6 +131,39 @@ body {
     cursor: pointer;
 }
 
+/* Main body */
+
+.main {
+    grid-area: main;
+    margin: 2% 10% 10% 10%;
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    column-gap: 10px;
+    backdrop-filter: blur(2px);
+}
+
+/* Footer */
+
+/*
 .footer {
     grid-area: footer;
+}
+*/
+
+.footer ul {
+    list-style: none;
+    position: fixed;
+    bottom: 2%;
+    left: 25%;
+    z-index: -1;
+    border: 0.5px solid #F9F5EB;
+    border-radius: 5px;
+}
+
+.footer li {
+    display: inline-block;
+    padding: 2px 20px 2px 20px;
+    font-size: 20px;
+    color: #F9F5EB;
+    text-align: center;
 }

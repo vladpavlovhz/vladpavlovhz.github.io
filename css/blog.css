@@ -1,18 +1,50 @@
-.blog {
-    overflow: auto;
+/* Style for Blog page */
+
+.blog h1 {
+    padding: 0 0 0 10px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+    color: whitesmoke;
 }
 
 .blog article {
-    margin: 5% 5% 5% 5%;
-    background-color: brown;
-    border: 5px solid green;
+    margin: 3% 5% 0 5%;
+    background-color: #EAE3D2;
+    border: 0.5px solid #000523;
+    border-radius: 5px;
     padding: 0 5% 0 5%;
 }
 
-.blog h1 {
-    text-align: center;
+.blog details {
+    padding-bottom: 10px;
 }
 
-.blog a p {
+.blog details > summary {
+    cursor: pointer;
+}
+
+.blog summary {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.faq details > summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.blog a {
     text-align: right;
+    text-decoration: none;
+    color: #000523;
+    font-size: 18px;
+}
+
+.blog a:visited {
+    color: indigo;
+}
+
+.blog a:hover {
+    color: blue;
 }

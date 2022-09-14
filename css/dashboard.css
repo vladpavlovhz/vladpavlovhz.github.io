@@ -1,21 +1,17 @@
 /* Dashboard styling */
 
-.dash-grid {
-    display: grid;
-    grid-template-columns: 80% 1fr;
-    column-gap: 10px;
-}
-
 /* Test Table */
 
 .tests {
     width: 100%;
-    color: aliceblue;
+    color: #000523;
     position: relative;
+    backdrop-filter: blur(10px);
 }
 
 .tests table, .tests td, .tests th, .tests tr {
-    border: 1px solid;
+    background-color: #F9F5EB;
+    border: 0.1px solid #1C3879;
 }
 
 .tests thead {
@@ -30,9 +26,10 @@
 }
 
 .tests th {
-    background-color: navy;
+    background-color: #607EAA;
     font-size: 22px;
     padding: 3px;
+    color: #F9F5EB;
 }
 
 .tests td {
@@ -78,21 +75,21 @@
 /* Test results */
 
 .passed {
-    background-color: rgb(144, 238, 144, 0.5);
+    background-color: palegreen !important;
 }
 
 .failed {
-    background-color: rgb(250, 128, 114, 0.5);
+    background-color: salmon !important;
 }
 
 .untaken {
-    background-color: rgb(240, 223, 134, 0.5);
+    background-color: palegoldenrod !important;
 }
 
 /* Progress bar */
 
 .pbar{
-    background-color: navy;
+    background-color: #F9F5EB;
     position: relative;
     transform: translateY(-50%);
     top: 45%;
@@ -101,12 +98,13 @@
     height: 70%;
     border-radius: 10px;
     text-align: center;
-    border: 1px solid whitesmoke;
+    border: 1px solid #F9F5EB;
 }
 
 .pbar p {
-    padding-top: 350%;
-    color: whitesmoke;
+    padding-top: 260%;
+    color: #000523;
+    font-size: 20px;
     font-weight: bold;
 }
     

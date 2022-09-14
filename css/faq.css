@@ -1,23 +1,32 @@
+/* Styling for FAQ page */
+
 .faq {
-    overflow: auto;
+    margin-top: 10px;
 }
 
 .faq h1 {
-    padding: 0 0 0 10px;
+    padding: 0 0 10px 10px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+    color: whitesmoke;
 }
 
 .faq table {
     background-color: none;
+    color: #000523;
 }
 
 .faq tr {
-    background-color: azure;
+    background-color: #EAE3D2;
 }
 
 .faq td {
     padding: 2%;
-    border: 1px solid purple;
+    border: 1px solid #000523;
+    border-radius: 3px;
 }
+
 .faq details > summary {
     list-style: none;
     cursor: pointer;
@@ -26,7 +35,7 @@
 }
 
 .faq details > summary:hover {
-    color: blue;
+    color: #1C3879;
 }
 
 .faq p {

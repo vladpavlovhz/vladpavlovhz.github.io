@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/mainstyle.css" rel="stylesheet"/>
+    <link href="../css/blogpost.css" rel="stylesheet"/>
+    <title>Blogpost title</title>
+    <style>
+      article img {max-height: 40px; }
+      article a {text-decoration: none; color:black;}
+      article a:hover {color:blue}
+      article ol li::marker {font-size: 13px;}
+      article ol a {font-size: 13px;}
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="navbar">
+        <table>
+          <!-- Site navigation -->
+          <td>
+            <a href="../index.html">Home</a>
+          </td>
+          <td>
+            <a href="../profile.html">Profile</a>
+          </td>
+          <td>
+            <a href="../dashboard.html">Dashboard</a>
+          </td>
+          <td id="active">
+            <a href="../blog.html">Blog</a>
+          </td>
+          <td>
+            <a href="../faq.html">FAQ</a>
+          </td>
+          <!-- Aside with links -->
+          <td>
+            <aside class="dropdown">
+              <span>Resources</span>
+              <div class="dropdown-content">
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf" target="_blank">HZ HBO-ICT Course and Examination Regulations (CER)</a>
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" target="_blank">Implementation Regulations (IR) HBO-ICT</a>
+                <a href="https://learn.hz.nl/" target="_blank">HZ Learn</a>
+                <a href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank">ICT Teams </a>
+                <a href="https://hz.osiris-student.nl/#/voortgang/:id" target="_blank">Study Progress</a>
+                <a href="https://github.com/HZ-HBO-ICT" target="_blank">ICT Github</a>
+              </div>
+            </aside>
+          </td>
+          <!-- Logo -->
+          <td>
+            <a href="https://hz.nl">
+              <img src="../resources/hz-logo.png" alt="HZ logo">
+            </a>          
+          </td>
+        </table>
+      </div>
+      <!-- Main -->
+      <div class="main">
+        <article class="article">
+          <h1>Prospective companies</h1>
+          <hr>
+          <section>
+            <a href="https://www.gradyent.ai/" target="_blank">
+              <img src="blog-img/gradyent-logo.png" alt="Gradyent logo">
+            </a>
+            <p>
+              Gradyent is a company aiming to improve the efficiency of district heating systems. They achieve this by running simulations of the heating systems, and then having their custom AI optimize it. The company is relatively small at less than 50 people. Open positions include 'DevOps Engineer' responsible for designing, creating and maintaining the infrastructure, which allows for the deployment of applications developed by the research departments. This includes working with Docker, AWS as well as various database systems.<sup>
+                <a href="#source-1">[1]</a>
+              </sup>
+            </p>
+            <p>
+              I would be interested to work at Gradyent because it is a growing company with a culture inspiring self-development and the clear-cut goal of improving sustainability.
+            </p>
+          </section>
+          <hr>
+          <section>
+            <img src="blog-img/dashmote-logo.png" alt="Dashmote logo">
+            <p>
+              Dashmote is a company that develops software for sourcing and analyzing publicly available data. The exact process depends on the goals of the clients. Although is a relatively small company at just over 60 people, it works with multiple Fortune 500 companies including Coca-Cola and Heineken. 
+              <sup>
+                <a href="https://dashmote.com/success-stories/">[2]</a>
+              </sup>
+              Roles in the company include Data Scientists, Data Engineers, and Data analysts. The reviews about the companies culture are mixed. It is said to inspire creativity and innovation, while also lacking a proper managemnet structure.
+              <sup>
+                <a href="https://www.glassdoor.nl/Reviews/dashmote-Reviews-E921670.htm">[3]</a>
+              </sup>
+            </p>
+            <p>
+              I would be interested in working for Dashmote, since it's a company dealing with large clients that has to interact with all sorts of data. It might be possible to check it out closer with their internship program.
+              <sup>
+                <a href="#source-4">[4]</a>
+              </sup>
+            </p>
+          </section>
+          <hr>
+          <section>
+            <img src="blog-img/sobolt-logo.png" alt="Sobolt logo">
+            <p>
+              Sobolt is a company focused on creating software solutions for sustainable cities. Their projects include apps for the analysis of a city's solar potential, residential heatloss analysis, road and roadside inspection.
+              <sup>
+                <a href="#source-5">[5]</a>
+              </sup>
+              This is achieved by training computer vision networks. Positions of interest include 'AI Software Engineer', which requires knowledge of Python as well as experience working databases and cloud systems.
+              <sup>
+                <a href="#source-6">[6]</a>
+              </sup>
+              Being a small company of under 50 people, Sobolt has a culture that promotes creativity sometimes to the detriment of a clear goal, which is common among start-ups.
+              <sup>
+                <a href="#source-7">[7]</a>
+              </sup>
+            </p>
+            <p>
+              I would like to work for Sobolt, since it's a company that uses AI solutions, which are of great interest to me, for improving city sustainability, which is a cause I can easily get behind.
+            </p>
+          </section>
+          <hr>
+          <ol style="list-style-position:inside;">
+            <li id="source-1">
+              <a href="https://gradyent.homerun.co/devops-engineer/en" target="_blank">Gradyent DevOps Engineer</a>
+            </li>
+            <li id="source-2">
+              <a href="https://dashmote.com/success-stories/">Dashmote customers</a>
+            </li>
+            <li id="source-3">
+              <a href="https://www.glassdoor.nl/Reviews/dashmote-Reviews-E921670.htm">Dashmote Glassdoor reviews</a>
+            </li>
+            <li id="source-4">
+              <a href="https://jobs.dashmote.com/o/data-engineer-intern-6">Dashmote internship</a>
+            </li>
+            <li id="source-5">
+              <a href="https://www.sobolt.com/software/">Sobolt software</a>
+            </li>
+            <li id="source-6">
+              <a href="https://www.sobolt.com/careers/">Sobolt careers</a>
+            </li>
+            <li id="source-7">
+              <a href="https://www.glassdoor.nl/Reviews/Sobolt-Reviews-E2292470.htm?filter.iso3Language=eng">Sobolt Glassdoor review</a>
+            </li>
+          </ol>
+        </article>
+      </div>
+      <!-- Footer -->
+      <div class="footer">
+        <ul>
+          <li>email: pavl0008@hz.nl</li>
+          <li>phone: +31 6 12345678</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+</html>

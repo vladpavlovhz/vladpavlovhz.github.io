@@ -1,0 +1,46 @@
+/* Basic styling for blog posts. Additional styling for some blogposts via internal*/
+
+.article {
+    background-color: #EAE3D2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.article h1 {
+    font-size: 25px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.article h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.article h3 {
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+.article p {
+    text-indent: 5px;
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.article sup {
+    line-height: 0;
+    font-size: 10px;
+    vertical-align: super;
+}
+
+.article ul {
+    list-style-position: inside;
+}
+
