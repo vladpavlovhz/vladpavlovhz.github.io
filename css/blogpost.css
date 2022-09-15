@@ -6,6 +6,18 @@
     border-radius: 10px;
 }
 
+.back {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    color: #000523;
+    text-decoration: underline;
+}
+
+.back:hover {
+    color: #1C3879;
+}
+
 .article h1 {
     font-size: 25px;
     font-weight: bolder;
