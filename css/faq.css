@@ -24,7 +24,7 @@
 .faq td {
     padding: 2%;
     border: 1px solid #000523;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .faq details > summary {

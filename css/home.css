@@ -1,0 +1,99 @@
+.home {
+    margin: 2% 10% 10% 10%;
+    backdrop-filter: blur(8px);
+    display: grid;
+    grid-template-areas: 
+        "intro img1"
+        "intro img1"
+        "img2 list";
+    grid-template-columns: 65% 1fr;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.home a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.home a:visited {
+    color: whitesmoke;
+}
+
+.home a:hover {
+    color: aqua;
+}
+
+.intro {
+    grid-area: intro;
+    padding: 10%;
+    border-right: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    border-bottom-right-radius: 10px;
+    font-style: italic;
+}
+
+.intro h1 {
+    font-size: 50px;
+    padding: 10px;
+    text-indent: 10px;
+}
+
+.intro h2 {
+    font-size: 30px;
+    padding: 8px;
+}
+
+.intro a {
+    font-weight: bolder;
+    
+}
+
+.intro p {
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+.img-1 {
+    grid-area: img1;
+}
+
+.img-2 {
+    grid-area: img2;
+}
+
+.list {
+    grid-area: list;
+    padding: 10%;
+    border-top: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+    border-top-left-radius: 10px;
+}
+
+.list h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.list ul {
+    list-style-position: inside;
+}
+
+.list li {
+    padding-top: 5px;
+}
+
+.list a {
+    border: 0.5px dashed whitesmoke;
+    border-radius: 5px;
+}
+
+.home img {
+    max-height: 100%;
+    max-width: 100%;
+}
