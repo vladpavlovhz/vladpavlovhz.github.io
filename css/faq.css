@@ -28,7 +28,6 @@
 }
 
 .faq details > summary {
-    list-style: none;
     cursor: pointer;
     font-weight: bold;
     font-size: 18px;
