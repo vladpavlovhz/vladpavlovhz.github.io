@@ -51,7 +51,6 @@
 
 .intro a {
     font-weight: bolder;
-    
 }
 
 .intro p {
@@ -91,9 +90,4 @@
 .list a {
     border: 0.5px dashed whitesmoke;
     border-radius: 5px;
-}
-
-.home img {
-    max-height: 100%;
-    max-width: 100%;
 }
