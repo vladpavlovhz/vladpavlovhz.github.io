@@ -11,7 +11,7 @@
 
 .tests table, .tests td, .tests th, .tests tr {
     background-color: #F9F5EB;
-    border: 0.1px solid #1C3879;
+    border: 0.2px solid #1C3879;
 }
 
 .tests thead {
@@ -88,35 +88,46 @@
 
 /* Progress bar */
 
-.pbar{
-    background-color: #F9F5EB;
-    position: relative;
-    transform: translateY(-50%);
-    top: 45%;
-    margin-left: 45%;
-    width: 30%;
-    height: 70%;
-    border-radius: 10px;
-    text-align: center;
-    border: 1px solid #F9F5EB;
+.progress-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.pbar p {
-    padding-top: 260%;
-    color: #000523;
-    font-size: 20px;
-    font-weight: bold;
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 80%;
+    width: 45px;
+    background-color: #F9F5EB;
+    border: 0.2px solid #1C3879;
+    border-radius: 5px;
 }
-    
-.bar{
-    background-color: darkgreen;
+
+.progress-fill {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 10%;
-    box-sizing: border-box;
-    transform-origin: bottom;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    background-color: darkgreen;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.progress-percentage {
+    color:#000523;
+}
+
+/* Submission of grades */ 
+
+form {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.test-grade-form {
+    width: 15px;
 }
 

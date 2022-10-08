@@ -2,11 +2,11 @@
 <html lang="en">
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/mainstyle.css" rel="stylesheet"/>
-    <link href="css/dashboard.css" rel="stylesheet"/>
+    <link href="css/mainstyle.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
     <title>Dashboard</title>
   </head>
 
@@ -49,7 +49,7 @@
             <td>
               <a href="https://hz.nl" target="_blank">
                 <img src="resources/hz-logo.png" alt="HZ logo">
-              </a>          
+              </a>
             </td>
           </tr>
         </table>
@@ -61,22 +61,27 @@
           <thead>
             <tr>
               <!-- Table Header -->
-              <th>Quarter</th>
-              <th>Course</th>
-              <th>Credits</th>
-              <th>Test</th>
-              <th>Result</th>
+              <th scope="col">Quarter</th>
+              <th scope="col">Course</th>
+              <th scope="col">Credits</th>
+              <th scope="col">Test</th>
+              <th scope="col">Result</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="courses">
             <!-- Courses and tests-->
             <tr>
               <!-- Block 1 -->
               <td rowspan="4">Block 1</td>
-              <td>Program- & Career Orientation (PCO)(CU75001V3)</td>
+              <td>Program- &amp; Career Orientation (PCO)(CU75001V3)</td>
               <td>2.5</td>
               <td>Assessment website (Individual process assessment)</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test1">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 1 -->
@@ -84,7 +89,12 @@
               <td>Computer Science Basics (CSB)(CU75002V2)</td>
               <td>5</td>
               <td>Written knowledge test</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test2">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 1 -->
@@ -92,7 +102,12 @@
               <td>Programming Basics (PBA)(CU75003V1)</td>
               <td>5</td>
               <td>Case study exam</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test3">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 1 -->
@@ -100,7 +115,12 @@
               <td>IT Personality 1 (ITP1)(CU75056V1)</td>
               <td>1.25</td>
               <td>Portfolio</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test4">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr class="block">
               <!-- Block 2 -->
@@ -108,7 +128,12 @@
               <td rowspan="2">Object-Oriented programming (OOP)(CU75004V1)</td>
               <td rowspan="2">10</td>
               <td>Presentation</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test5">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 2 OOP -->
@@ -116,7 +141,12 @@
               <td style="display:none"></td>
               <td style="display:none"></td>
               <td>Case study exam</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test6">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 3 -->
@@ -124,7 +154,12 @@
               <td>Framework Development 1 (FDE1)(CU75008V1)</td>
               <td>5</td>
               <td>Case study exam</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test7">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 3 -->
@@ -132,7 +167,12 @@
               <td rowspan="3">Framework Project 1 (FPR1)(CU75009V4)</td>
               <td rowspan="3">7.5</td>
               <td>Criterium based interview</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test8">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 3 FW Project 1 -->
@@ -140,7 +180,12 @@
               <td style="display:none"></td>
               <td style="display:none"></td>
               <td>Assignment</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test9">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 3 FW Project 1 -->
@@ -148,7 +193,12 @@
               <td style="display:none"></td>
               <td style="display:none"></td>
               <td>Case study exam</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test10">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 4 -->
@@ -156,7 +206,12 @@
               <td rowspan="3">Framework Project 2 (FPR2)(CU75011V3)</td>
               <td rowspan="3">10</td>
               <td>Final delivery</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test11">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 4 FW Project 2 -->
@@ -164,7 +219,12 @@
               <td style="display:none"></td>
               <td style="display:none"></td>
               <td>Report of acceptance test and optional assesments</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test12">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 4 FW Project 2 -->
@@ -172,7 +232,12 @@
               <td style="display:none"></td>
               <td style="display:none"></td>
               <td>IT Development portfolio</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test13">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 4 -->
@@ -180,7 +245,12 @@
               <td>IT Personality 2 (ITP2)(CU75057V1)</td>
               <td>1.25</td>
               <td>Portfolio</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test14">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 4 -->
@@ -188,7 +258,12 @@
               <td rowspan="2">Personal Professional Development: Exploration (PPD-E)(INT Class)(CU75068V2)</td>
               <td rowspan="2">12.5</td>
               <td>English Test</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test15">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
             <tr>
               <!-- Block 4 PPD-->
@@ -196,14 +271,21 @@
               <td style="display:none"></td>
               <td style="display:none"></td>
               <td>Criterium focused interview</td>
-              <td class="untaken">N/A</td>
+              <td class="untaken" id="test16">
+                <form>
+                  <input type="text" name="grade">
+                  <button type="button" onclick="update_grade(this.form)">Submit</button>
+                </form>
+              </td>
             </tr>
           </tbody>
         </table>
         <!-- Progress bar -->
-        <div class="pbar">
-          <p style="z-index: 1;">0%</p>
-          <div class="bar" style="height:0%; z-index: -1;">
+        <div class="progress-container">
+          <div class="progress-bar">
+            <p class="progress-percentage" id="progress-percentage"></p>
+            <div class="progress-fill" id="progress-fill">
+            </div>
           </div>
         </div>
       </div>
@@ -215,6 +297,28 @@
         </ul>
       </div>
     </div>
+    <!-- <script>
+      function update_grade(form){
+        console.log(form);
+        const grade = parseFloat(form.children[0].value);
+        if (!isNaN(grade)){
+          if (0 <= grade && grade < 5.5){
+            const cell = form.parentNode;
+            cell.className = "failed";
+            cell.innerHTML = grade;
+          } else if (grade <= 10){
+            const cell = form.parentNode;
+            cell.className = "passed";
+            cell.innerHTML = grade;
+          } else {
+            form.children[0].value = "";
+          }
+        } else {
+          form.children[0].value = "";
+        }
+      }
+    </script> -->
+    <script src="js/progress-bar.js"></script>
   </body>
 
 </html>
