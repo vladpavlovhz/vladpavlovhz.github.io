@@ -48,3 +48,13 @@ function update_grade(form){
         form.children[0].value = "";
     }
 }
+
+const inputFields = document.querySelectorAll('.input-text');
+inputFields.forEach(function(field){
+    field.addEventListener("keydown", function formEnter(event) {
+        if (event.key === 'Enter'){
+            event.preventDefault();
+            update_grade(field.parentNode); 
+        }
+    });
+});

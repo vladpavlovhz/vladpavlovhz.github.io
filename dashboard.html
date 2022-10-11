@@ -78,7 +78,7 @@
               <td>Assessment website (Individual process assessment)</td>
               <td class="untaken" id="test1">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -91,7 +91,7 @@
               <td>Written knowledge test</td>
               <td class="untaken" id="test2">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -104,7 +104,7 @@
               <td>Case study exam</td>
               <td class="untaken" id="test3">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -117,7 +117,7 @@
               <td>Portfolio</td>
               <td class="untaken" id="test4">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -130,7 +130,7 @@
               <td>Presentation</td>
               <td class="untaken" id="test5">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -143,7 +143,7 @@
               <td>Case study exam</td>
               <td class="untaken" id="test6">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -156,7 +156,7 @@
               <td>Case study exam</td>
               <td class="untaken" id="test7">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -169,7 +169,7 @@
               <td>Criterium based interview</td>
               <td class="untaken" id="test8">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -182,7 +182,7 @@
               <td>Assignment</td>
               <td class="untaken" id="test9">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -195,7 +195,7 @@
               <td>Case study exam</td>
               <td class="untaken" id="test10">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -208,7 +208,7 @@
               <td>Final delivery</td>
               <td class="untaken" id="test11">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -221,7 +221,7 @@
               <td>Report of acceptance test and optional assesments</td>
               <td class="untaken" id="test12">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -234,7 +234,7 @@
               <td>IT Development portfolio</td>
               <td class="untaken" id="test13">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -247,7 +247,7 @@
               <td>Portfolio</td>
               <td class="untaken" id="test14">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -260,7 +260,7 @@
               <td>English Test</td>
               <td class="untaken" id="test15">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -273,7 +273,7 @@
               <td>Criterium focused interview</td>
               <td class="untaken" id="test16">
                 <form>
-                  <input type="text" name="grade">
+                  <input class="input-text" type="text" name="grade">
                   <button type="button" onclick="update_grade(this.form)">Submit</button>
                 </form>
               </td>
@@ -283,9 +283,9 @@
         <!-- Progress bar -->
         <div class="progress-container">
           <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+            <div class="nbsa"></div>
             <p class="progress-percentage" id="progress-percentage"></p>
-            <div class="progress-fill" id="progress-fill">
-            </div>
           </div>
         </div>
       </div>
@@ -297,27 +297,6 @@
         </ul>
       </div>
     </div>
-    <!-- <script>
-      function update_grade(form){
-        console.log(form);
-        const grade = parseFloat(form.children[0].value);
-        if (!isNaN(grade)){
-          if (0 <= grade && grade < 5.5){
-            const cell = form.parentNode;
-            cell.className = "failed";
-            cell.innerHTML = grade;
-          } else if (grade <= 10){
-            const cell = form.parentNode;
-            cell.className = "passed";
-            cell.innerHTML = grade;
-          } else {
-            form.children[0].value = "";
-          }
-        } else {
-          form.children[0].value = "";
-        }
-      }
-    </script> -->
     <script src="js/progress-bar.js"></script>
   </body>
 
