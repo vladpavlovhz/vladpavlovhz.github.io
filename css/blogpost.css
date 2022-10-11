@@ -43,7 +43,7 @@
     font-size: 15px;
     font-weight: normal;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .article sup {
@@ -55,4 +55,3 @@
 .article ul {
     list-style-position: inside;
 }
-
