@@ -132,7 +132,7 @@ body {
 }
 
 .dropdown span:hover {
-    cursor: pointer;
+    cursor: default;
 }
 
 /* Main body */
